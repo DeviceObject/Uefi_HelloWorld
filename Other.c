@@ -2,7 +2,7 @@ EFI_STATUS DetectBootablePartition(void *Bootable)
 {
 	EFI_STATUS	Status;
 	EFI_HANDLE	*ControllerHandles = NULL;
-	UINTN		HandleIndex,NumHandles;
+	UINT		HandleIndex,NumHandles;
 	//find all setup SimpleFileSystemProtocol 's Handle and find all FAT partition table
 	Status = gBS->LocateHandleBuffer(ByProtocol,&gEfiSimpleFileSystemProtocolGuid,NULL,&NumHandles,&ControllerHandles);
 	if (EFI_ERROR(Status))
