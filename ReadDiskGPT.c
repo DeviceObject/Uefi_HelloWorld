@@ -15,7 +15,7 @@
 EFI_STATUS EFIAPI UefiMain(IN EFI_HANDLE ImageHandle,IN EFI_SYSTEM_TABLE *SystemTable)
 {
 	EFI_STATUS Status;
-	UINT HandleIndex,HandleCount;
+	UINTN HandleIndex,HandleCount;
 	EFI_HANDLE *DiskControllerHandles = NULL;
 	EFI_DISK_IO_PROTOCOL *DiskIo;
 	//finder all EFI_DISK_IO_PROTOCOL's device
