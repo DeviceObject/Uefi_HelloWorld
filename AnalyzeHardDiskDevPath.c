@@ -1,4 +1,5 @@
 #include <Uefi.h>
+#include<stdio.h>
 #include <Base.h>
 #include <Library/UefiLib.h>
 #include <Library/BaseLib.h>
